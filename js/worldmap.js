@@ -1,3 +1,12 @@
+/* Interactive HTML5 world map (documentation: http://blog.janim.me/interactive-html5-world-map)
+
+ *  YOU HAVE THE 0.1 Version check my blog for more info
+
+ * Copyright (c) 2011 Ahmed Janim, (blog.janim.me) ahmed@janim.me
+ * Permission is hereby granted, free of charge, to any person
+ * Do whatever you want, share good stuff
+ */
+//_______________________________________________________________________________________________________________________________________
 /*
  * Canvas World Map function (documentation: http://joncom.be/code/excanvas-world-map)
  *
@@ -24,15 +33,8 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-//_______________________________________________________________________________________________________________________________________
- /* Interactive HTML5 world map (documentation: http://blog.janim.me/interactive-html5-world-map)
 
-  *  YOU HAVE THE 0.1 Version check my blog for more info
 
-  * Copyright (c) 2011 Ahmed Janim, (blog.janim.me) ahmed@janim.me
-  * Permission is hereby granted, free of charge, to any person
-  * Do whatever you want, share good stuff
-  */
 
 var html5WorldMap = {
     mapStage: null,
