@@ -102,7 +102,7 @@ function getCountryCode (code) {
 	   case "HU": code = "Hungary"; break;
        case "ID": code = "Indonesia"; break;
        case "IE": code = "Ireland"; break;
-	   case "IL": code = "Israel"; break;
+	   case "IL": code = "Palestine"; break;
        case "IM": code = "Isle of Man"; break;
 	   case "IN": code = "India"; break;
        case "IO": code = "British Indian Ocean Territory"; break;
