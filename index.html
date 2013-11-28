@@ -22,6 +22,16 @@
                     <div class="content">Null content</div>
                 </div>
                 <script type="text/javascript">
+                    var search = document.location.search;
+                    var zoom = '';
+                    var zoomed = false;
+                    if ( search.length ) {
+                        zoom = search.split('?')[1].split('&').reduce(function(mem, str) {
+                            var kvp = str.split('=');
+                            return ( kvp[0]==='zoomTo' ) ? kvp[1] : mem;
+                        }, '');
+                        zoomed = true;
+                    };
                     html5WorldMap.WorldMap({
                         id: "worldmap",
                         bgcolor: "#c1e6f7",
@@ -29,7 +39,10 @@
                         bordercolor: "#d2d3d4",
                         borderwidth: 1,
                         padding: 20,
-                        <?php if ($_GET['zoomTo'] == '') { echo 'zoom:"",'; } else { echo 'zoom:"' . $_GET['zoomTo'] . '",zoomed:true,'; } ?>detail: { "us": "#0c5c7d"}
+                        zoom: zoom,
+                        zoomed: zoomed,
+                        /*<?php if ($_GET['zoomTo'] == '') { echo 'zoom:"",'; } else { echo 'zoom:"' . $_GET['zoomTo'] . '",zoomed:true,'; } ?>*/
+                        detail: { "us": "#0c5c7d"}
                     });
                 </script>
             </body>
