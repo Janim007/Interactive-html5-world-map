@@ -60,6 +60,7 @@ var html5WorldMap = {
 
         // calculate zoom: create variables
         var aZoom = sZoom.split(",");
+        console.log(aZoom);
         var iMinX = oWorldMap[aZoom[0]][0][0][0];
         var iMaxX = oWorldMap[aZoom[0]][0][0][0];
         var iMinY = oWorldMap[aZoom[0]][0][0][1];
